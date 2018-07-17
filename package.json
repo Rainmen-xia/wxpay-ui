@@ -1,0 +1,11 @@
+{
+  "name": "@tencent/wxpay-ui",
+  "version": "1.0.11",
+  "description": "A Vue 2.0 UI components for web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rainmenxia",
+  "license": "ISC"
+}

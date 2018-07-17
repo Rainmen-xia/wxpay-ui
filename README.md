@@ -1,0 +1,45 @@
+### 介绍:
+A vue 2.0 UI components for web.
+
+### 安装：
+```
+tnpm install @tencent/wxpay-ui 
+```
+
+### 全局引入：
+```
+import wxpayUi from '@tencent/wxpay-ui';
+
+Vue.use(wxpayUi);
+```
+
+### 使用：
+```
+<template>
+    <!--卡片组件-->
+    <Card>
+        <!--卡片title 内置弹窗组件 -->
+        <CardTitle title="特约商户交易涨跌排行"  popmessage="特约商户交易涨跌排行"></CardTitle>
+        <!--卡片面板组件-->
+        <CardPanel>
+            <!---tab切换组件-->
+            <Tabs :type="type" name="areadistribute" :iupdatekey="updatekey"  @changeType="changeType"/>
+              <!--table组件-->
+              <iTable :header="header" :dataList="dataList">
+                    <!--自定义table列表内容-->
+                    <tr v-for="(item, index) in dataList" @click="goto_trends(item.key)">
+                        ...
+                        <td >
+                            <span>{{item.submchname}}</span>
+                            <span class="rankinglist_left">{{item.submchcode}}</span>
+                        </td>
+                    </tr>
+            </iTable>
+            <Paginator :totalPage="page_total" :icurrentPage="page_no" @changePage="changePage"/> 
+        </CardPanel>
+    </Card>
+</template>
+```
+
+### 效果:
+![效果图](http://km.oa.com/files/photos/captures/201805/1527744178_47_w363_h490.png)
