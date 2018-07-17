@@ -3,12 +3,12 @@ A vue 2.0 UI components for web.
 
 ### 安装：
 ```
-tnpm install @tencent/wxpay-ui 
+tnpm install wxpay-ui 
 ```
 
 ### 全局引入：
 ```
-import wxpayUi from '@tencent/wxpay-ui';
+import wxpayUi from 'wxpay-ui';
 
 Vue.use(wxpayUi);
 ```
@@ -19,7 +19,7 @@ Vue.use(wxpayUi);
     <!--卡片组件-->
     <Card>
         <!--卡片title 内置弹窗组件 -->
-        <CardTitle title="特约商户交易涨跌排行"  popmessage="特约商户交易涨跌排行"></CardTitle>
+        <CardTitle title="标题"  popmessage="弹出消息"></CardTitle>
         <!--卡片面板组件-->
         <CardPanel>
             <!---tab切换组件-->

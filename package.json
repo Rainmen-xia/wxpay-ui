@@ -1,6 +1,6 @@
 {
   "name": "wxpay-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vue 2.0 UI components for web.",
   "main": "index.js",
   "scripts": {
