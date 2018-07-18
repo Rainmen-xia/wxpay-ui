@@ -1,15 +1,15 @@
 # Vue-Standard
 
-### 1 书写建议规范
-1.1 使用vue 单文件（SFC）形式编写组件
+## 1 书写建议规范
+### 1.1 使用vue 单文件（SFC）形式编写组件
 
-1.2 文件结构以template script style 的顺序书写
+### 1.2 文件结构以template script style 的顺序书写
 ```html
 <template></template>
 <script></script>
 <style></style>
 ```
-1.3  组件方法建议顺序
+### 1.3  组件方法建议顺序
 
 ```javascript
 export default {
@@ -29,7 +29,7 @@ export default {
 ```
 
 
-### 2 组件设计
+## 2 组件设计
 
 组件设计遵守[FIRST](https://addyosmani.com/first/)原则:
 
