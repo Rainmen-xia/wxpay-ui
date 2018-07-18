@@ -145,6 +145,7 @@ export default {
    调试信息console.log() debugger 使用完及时删除
 
 ### 2.8 组件样式使用组件名作为作用域空间
+样式命名建议遵循BEM规范
 ```css
 .compName {}
 .compName .div{
