@@ -41,5 +41,3 @@ Vue.use(wxpayUi);
 </template>
 ```
 
-### 效果:
-![效果图](http://km.oa.com/files/photos/captures/201805/1527744178_47_w363_h490.png)

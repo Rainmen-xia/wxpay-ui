@@ -12,8 +12,7 @@
         return {}
     }
     ,created(){
-        debugger
-
+        console.log('created')
     }
 }
 </script>
