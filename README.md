@@ -3,7 +3,7 @@ A vue 2.0 UI components for web.
 
 ### 安装：
 ```
-tnpm install wxpay-ui 
+npm install wxpay-ui 
 ```
 
 ### 全局引入：
@@ -41,3 +41,8 @@ Vue.use(wxpayUi);
 </template>
 ```
 
+### 开发
+
+npm install 
+
+npm run dev

@@ -13,6 +13,7 @@
     }
     ,created(){
         console.log('created')
+        console.log('dev')
     }
 }
 </script>
