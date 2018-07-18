@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import App from './app.vue';
 import routes from './route';
-import {install as mint }  from 'mint-ui';
+import wxpayui  from '../index.js';
 import VueRouter from 'vue-router';
 console.log(routes)
 document.addEventListener('DOMContentLoaded', function() {
   if (window.FastClick) window.FastClick.attach(document.body);
 }, false);
 
-Vue.use(mint);
+Vue.use(wxpayui);
 Vue.use(VueRouter);
 
 const router = new VueRouter({

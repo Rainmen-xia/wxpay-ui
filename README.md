@@ -46,3 +46,5 @@ Vue.use(wxpayUi);
 npm install 
 
 npm run dev
+
+

@@ -1,6 +1,6 @@
-# Vue-Component-Standard-Guide
+# Vue-Standard
 
-### 1 Vue属性书写顺序
+### 1 Vue组件顺序
 
 ```javascript
 export default {
@@ -8,13 +8,13 @@ export default {
   data,
   props,
   store,
+  components,
   computed,
   route,
   created,
+  mounted,
   ready,
   event,
-  watch,
-  components,
   methods
 }
 ```
@@ -23,9 +23,7 @@ export default {
 
 ### 2 组件
 
-组件设计原则：
-FIRST
-https://addyosmani.com/first/
+组件设计遵守[FIRST](https://addyosmani.com/first/)原则:
 
 Components Should Be Focused, Independent, Reusable, Small & Testable (FIRST)
 
@@ -35,14 +33,14 @@ Components Should Be Focused, Independent, Reusable, Small & Testable (FIRST)
 
 ```html
 <template>
-  <my-components></my-components>
+  <my-component></my-component>
 </template>
 <script>
-  import myComponents from './myComponents.vue'
+  import myComponent from './myComponent.vue'
 
   export default {
   components: {
-  	  myComponents
+  	  myComponent
     }
   }
 </script>
@@ -55,24 +53,9 @@ Components Should Be Focused, Independent, Reusable, Small & Testable (FIRST)
 <script></script>
 <style></style>
 ```
-#### 2.3 组件引用
+### 3 事件用简写
 
-```javascript
-  import myComponentsA from './myComponentsA.vue'  
-  import myComponentsB from './myComponentsB.vue'
-  import myComponentsC from './myComponentsC.vue'
-  import myComponentsD from './myComponentsD.vue'
-  export default {
-    components: {
-  	  myComponentsA,
-      myComponentsB,
-      myComponentsC,
-      myComponentsD,
-    }
-  }
-```
-
-### 3 事件
+用@符号替代 v-on操作
 
 ```html
 <!-- bad -->
@@ -92,7 +75,7 @@ IDE 基本上不能识别行内表达式语法，所以使用行内表达式 IDE
 怎么做？
 如果你发现写了太多复杂并难以阅读的行内表达式，那么可以使用 method 或是 computed 属性来替代其功能。
 
- 
+
  ```html
 
 <!-- 推荐 -->
@@ -193,4 +176,4 @@ IDE 基本上不能识别行内表达式语法，所以使用行内表达式 IDE
 4. 谨慎使用 this.$refs
 5. 无需将 this 赋值给 component 变量
 6. 调试信息console.log() debugger 使用完及时删除
- 
+

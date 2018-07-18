@@ -3,7 +3,7 @@ import bodyEl from "./components/body.vue";
 import Card from './components/card.vue';
 import CardTitle from './components/cardtitle.vue';
 import CardPanel from './components/cardpanel.vue';
-import Chart from './components/chart.vue';
+//import Chart from './components/chart.vue';
 import Tabs from './components/tabs.vue'; 
 import Pielegend from './components/pielegend.vue';
 import Paginator from './components/paginator.vue';
@@ -12,7 +12,7 @@ import modal from './components/modal/index';
 
 require('./theme/default.css');
 
-const components = [headerEL,bodyEl,Card,CardTitle,CardPanel,Chart,Tabs,Pielegend,Paginator,iTable]
+const components = [headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable]
        
 const install = function(Vue, opts = {}) {
     components.map(component=>{
@@ -29,6 +29,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     version:'1.0.0',
     install,
-    headerEL,bodyEl,Card,CardTitle,CardPanel,Chart,Tabs,Pielegend,Paginator,iTable
+    headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable
 }
 
