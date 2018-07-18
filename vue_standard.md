@@ -68,16 +68,19 @@ export default {
 }
 </script>
 ```
-### 2.3 组件模版中事件简写
+### 2.3 使用缩写
 
 用@符号替代 v-on操作
+用:代替 v-bind操作
 
 ```html
 <!-- bad -->
 <a v-on:click="test()">test</a>
+<a v-bind:href="url">...</a>
 
 <!-- good -->
 <a @click="test">test</a>
+<a :href="url">...</a>
 ```
 ### 2.4 表达式简化
 
@@ -88,31 +91,29 @@ export default {
 <!-- good -->
 <template>
     <h1>
-        {{ `${year}-${month}` }}
+        {{fullName}}
     </h1>
 </template>
 <script type="text/javascript">
   export default {
+    data(){
+      return {
+        firstName:'wang',
+        givenName:'wu'
+      }
+    },
     computed: {
-      month() {
-        return this.twoDigits((new Date()).getUTCMonth() + 1);
-      },
-      year() {
-        return (new Date()).getUTCFullYear();
+      fullName() {
+        return this.firstName+this.givenName;
       }
-    },
-    methods: {
-      twoDigits(num) {
-        return ('0' + num).slice(-2);
-      }
-    },
+    }
   };
 </script>
 
 <!-- bad -->
 <template>
     <h1>
-        {{ `${(new Date()).getUTCFullYear()}-${('0' + ((new Date()).getUTCMonth()+1)).slice(-2)}` }}
+        {{this.firstName+this.givenName}}
     </h1>
 </template>
  ```
