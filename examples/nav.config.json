@@ -1,0 +1,17 @@
+[
+  {
+    "title": "JS Components",
+    "list": [
+      {
+        "path": "/modal",
+        "name": "Modal",
+        "icon": "modal"
+      }
+    ]
+  },
+  {
+    "title": "CSS Components",
+    "list": [
+    ]
+  }
+]
