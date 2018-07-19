@@ -10,7 +10,7 @@ import Paginator from './components/paginator.vue';
 import iTable from "./components/itable.vue";
 import modal from './components/modal/index';
 
-require('./theme/default.css');
+require('./theme/reset.css');
 
 const components = [headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable]
        

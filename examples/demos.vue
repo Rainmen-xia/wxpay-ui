@@ -2,18 +2,18 @@
   <section class="page-demo">
     <ul>
     <li v-for="group in navs" :key="test1" >
-      <div class="page-title" v-text="group.title"  :key="test2" ></div>
-      <a
-        v-for="item in group.list"
-   
-        :href="getHref(item.path)"
-        >
-        <div  class="sass_test">
-          <i :class="['indexicon', 'icon-' + item.icon]"></i>
-          <span class="sass_test" >{{ item.name }}</span>
-          <span>{{item.path}}</span>
-        </div>
-      </a>
+      <div class="wxpy-flex" :key="test2" >
+        <p class="wxpy-item">{{group.title}}</p>
+        <i :class="['indexicon', 'icon-' + group.icon]"></i>
+      </div>
+      <div class="page__category">
+        <a v-for="item in group.list" :href="getHref(item.path)">
+          <div class="page-cell">
+            <span class="page-cell_name" >{{ item.name }}</span>
+            <span>{{item.path}}</span>
+          </div>
+        </a>
+      </div>
     </li>
     </ul>
   </section>
@@ -55,16 +55,6 @@
 
 
 <style lang="scss">
-  .page-demo {
-    padding:1px;
-  }
-  $nav-color: #F90;
-  .sass_test {
-    $width: 100px;
-    width: $width;
-    color: $nav-color;
-  }
-
   /* @component-namespace page {
     @component title {
       font-size: 20px;
