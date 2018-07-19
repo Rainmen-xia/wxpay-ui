@@ -1,7 +1,8 @@
 <template>
   <section class="page-demo">
-    <div v-for="group in navs"     :key="test1" >
-      <div class="page-title" v-text="group.title"  :key="tes2" ></div>
+    <ul>
+    <li v-for="group in navs" :key="test1" >
+      <div class="page-title" v-text="group.title"  :key="test2" ></div>
       <a
         v-for="item in group.list"
    
@@ -13,7 +14,8 @@
           <span>{{item.path}}</span>
         </div>
       </a>
-    </div>
+    </li>
+    </ul>
   </section>
 </template>
 
