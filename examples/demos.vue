@@ -52,7 +52,7 @@
 
 
 
-<style>
+<style lang="scss">
   .page-demo {
     padding:1px;
   }
