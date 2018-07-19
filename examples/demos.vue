@@ -7,9 +7,9 @@
    
         :href="getHref(item.path)"
         >
-        <div slot="title">
+        <div  class="sass_test">
           <i :class="['indexicon', 'icon-' + item.icon]"></i>
-          <span>{{ item.name }}</span>
+          <span class="sass_test" >{{ item.name }}</span>
           <span>{{item.path}}</span>
         </div>
       </a>
@@ -54,24 +54,15 @@
 
 <style>
   .page-demo {
-    padding-bottom: 50px;
-
-    .indexicon {
-      font-size: 22px;
-      color: #26a2ff;
-      display: inline-block;
-      width: 30px;
-      vertical-align: middle;
-
-      &.icon-swipe {
-        font-size: 26px;
-      }
-
-      &.icon-checklist {
-        font-size: 18px;
-      }
-    }
+    padding:1px;
   }
+  $nav-color: #F90;
+  .sass_test {
+    $width: 100px;
+    width: $width;
+    color: $nav-color;
+  }
+
   /* @component-namespace page {
     @component title {
       font-size: 20px;

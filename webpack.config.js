@@ -49,7 +49,10 @@ config = {
                         sourceMap: true,
                         minimize: true
                       }
-                    }, {// fix the css3
+                    },{                    
+                        loader: 'sass-loader'
+                    },
+                     {// fix the css3
                       loader: "postcss-loader",
                       options: {
                         sourceMap: true,

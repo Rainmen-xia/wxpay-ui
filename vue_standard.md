@@ -113,7 +113,7 @@ export default {
 <!-- bad -->
 <template>
     <h1>
-        {{this.firstName+this.givenName}}
+        {{firstName+givenName}}
     </h1>
 </template>
  ```

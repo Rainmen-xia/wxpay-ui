@@ -4,7 +4,6 @@
         text-align: center;
         padding-bottom: 20px;
         font-size: 26px; 
-        color: 
     }
     .wxp-paginator_tab{
         border-radius: 20px;
