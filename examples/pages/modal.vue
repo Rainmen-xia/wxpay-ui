@@ -1,6 +1,6 @@
 <template>
 <div>
-    <span>modal</span>
+    <span @click="showModel">modal</span>
 </div>
 </template>
 
@@ -14,6 +14,11 @@
     ,created(){
         console.log('created')
         console.log('dev')
+    },
+    methods:{
+        showModel(){
+            this.$modal.show('model');
+        }
     }
 }
 </script>
