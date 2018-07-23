@@ -6,6 +6,31 @@
         "path": "/modal",
         "name": "Modal",
         "icon": "modal"
+      },
+      {
+        "path": "/button",
+        "name": "Button",
+        "icon": "button"
+      },
+      {
+        "path": "/input",
+        "name": "Input",
+        "icon": "input"
+      },
+      {
+        "path": "/list",
+        "name": "List",
+        "icon": "list"
+      },
+      {
+        "path": "/slider",
+        "name": "Slider",
+        "icon": "slider"
+      },
+      {
+        "path": "/uploader",
+        "name": "Uploader",
+        "icon": "uploader"
       }
     ]
   },

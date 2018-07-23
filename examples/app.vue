@@ -22,7 +22,6 @@
 
 
 <style>
-  @import "../theme/example.scss";
   /* @reset-global mobile;*/
 
   html, body {

@@ -29,9 +29,20 @@
         }
       }
       .page__category{
-        padding-left: 20px;
+        height: auto;
         //height: 0;
         //overflow: hidden;
+        .wxpy-cells{
+          .wxpy-cell{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            .wxpy-cell__bd{
+              flex: 1;
+            }
+          }
+        }
       }
       }
     }

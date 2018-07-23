@@ -7,12 +7,13 @@
         <i :class="['indexicon', 'icon-' + group.icon]"></i>
       </div>
       <div class="page__category">
-        <a v-for="item in group.list" :href="getHref(item.path)">
-          <div class="page-cell">
+        <div class="wxpy-cells page__category-content">
+        <a class="wxpy-cell" v-for="item in group.list" :href="getHref(item.path)">
+          <div class="wxpy-cell__bd">
             <span class="page-cell_name" >{{ item.name }}</span>
-            <span>{{item.path}}</span>
           </div>
         </a>
+        </div>
       </div>
     </li>
     </ul>
