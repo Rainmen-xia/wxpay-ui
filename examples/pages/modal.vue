@@ -1,6 +1,6 @@
 <template>
 <div>
-    <span @click="showModel">modal</span>
+    <span @click="showModel">click me</span>
 </div>
 </template>
 
