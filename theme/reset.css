@@ -51,7 +51,8 @@ menu {
 
 body {
     -webkit-text-size-adjust: 100%!important;
-    font-family: Helvetica
+    font-family: Helvetica;
+    background-color: #f8f8f8;
 }
 
 input[type=number] {
