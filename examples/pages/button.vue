@@ -1,8 +1,23 @@
 <template>
     <div>
-        <wx-button>
-            button
-        </wx-button>
+        <wxpy-btn type="primary">
+            页面主操作 Normal
+        </wxpy-btn>
+        <wxpy-btn type="default">
+            页面次操作 Normal
+        </wxpy-btn>
+        <wxpy-btn type="warn">
+            危险 Normal
+        </wxpy-btn>
+        <div style="width: 60%;margin: 15px auto 0">
+            <wxpy-btn type="plain-default">按钮</wxpy-btn>
+            <wxpy-btn type="plain-primary">按钮</wxpy-btn>
+        </div>
+        <div style="width: 60%;margin: 15px auto 0">
+            <wxpy-btn type="mini-primary">按钮</wxpy-btn>
+            <wxpy-btn type="mini-warn">按钮</wxpy-btn>
+            <wxpy-btn type="mini-primary">按钮</wxpy-btn>
+        </div>
     </div>
 </template>
 
@@ -13,5 +28,7 @@
 </script>
 
 <style scoped>
-
+.wxpy-btn + .wxpy-btn{
+    margin-top: 15px;
+}
 </style>

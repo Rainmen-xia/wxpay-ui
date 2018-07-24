@@ -3,7 +3,7 @@
             <Card>
                 card
             </Card>
-    
+
         </div>
     </template>
     
