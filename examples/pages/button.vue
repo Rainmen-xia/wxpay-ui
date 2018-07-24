@@ -1,8 +1,8 @@
 <template>
     <div>
-        <span>
+        <wx-button>
             button
-        </span>
+        </wx-button>
     </div>
 </template>
 
