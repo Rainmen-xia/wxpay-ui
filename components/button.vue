@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <span>button</span>
+    <div class="wx-button">
+        <slot></slot>
     </div>
 </template>
 
 <script>
     export default {
-        name: "button"
+        name: "WxButton"
     }
 </script>
 

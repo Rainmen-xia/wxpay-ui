@@ -8,7 +8,8 @@
       </div>
       <div class="page__category">
         <div class="wxpy-cells page__category-content">
-        <a class="wxpy-cell" v-for="item in group.list" :href="getHref(item.path)">
+        <!-- <a class="wxpy-cell" v-for="item in group.list" :href="getHref(item.path)"> -->
+            <a class="wxpy-cell" v-for="item in group.list" :data-test="item.path" @click="handleRouter($event,item.path)">
           <div class="wxpy-cell__bd">
             <span class="page-cell_name" >{{ item.name }}</span>
           </div>
@@ -36,18 +37,29 @@
     methods:{
       getHref(href){
         if (href && !this.added && this.$router) {
-        const resolved = this.$router.match(href);
-        if (!resolved.matched.length) return href;
-        this.$nextTick(() => {
-          this.added = true;
-          this.$el.addEventListener('click', (e)=>{
-            e.preventDefault();
-            this.$router.push(href);
+          debugger
+          console.log(href)
+          const resolved = this.$router.match(href);
+          if (!resolved.matched.length) return href;
+          this.$nextTick(() => {
+            debugger
+            this.added = true;
+            this.$el.addEventListener('click', (e)=>{
+
+              debugger
+              e.preventDefault();
+              this.$router.push(href);
+            });
           });
-        });
-        return resolved.fullPath || resolved.path;
+          return resolved.fullPath || resolved.path;
       }
       return href;
+      },
+      handleRouter(e,path){
+         this.$el.addEventListener('click', (e)=>{
+          e.preventDefault();
+          this.$router.push(path);
+        });
       }
     }
   };

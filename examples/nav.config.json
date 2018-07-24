@@ -37,6 +37,11 @@
   {
     "title": "CSS Components",
     "list": [
+      {
+        "path": "/card",
+        "name": "Card",
+        "icon": "card"
+      }
     ]
   }
 ]

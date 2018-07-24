@@ -4,7 +4,6 @@ import routes from './route';
 import wxpayui  from '../index.js';
 import VueRouter from 'vue-router';
 require('../theme/example.scss');
-console.log(routes)
 document.addEventListener('DOMContentLoaded', function() {
   if (window.FastClick) window.FastClick.attach(document.body);
 }, false);
