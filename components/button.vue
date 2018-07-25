@@ -27,7 +27,7 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
     @import "../theme/common.scss";
     .wxpy-btn {
         position: relative;

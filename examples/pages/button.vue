@@ -1,5 +1,9 @@
 <template>
     <div>
+        <div class="page__hd">
+            <h1 class="page__title">Button</h1>
+            <p class="page__dsc">按钮</p>
+        </div>
         <wxpy-btn type="primary">
             页面主操作 Normal
         </wxpy-btn>

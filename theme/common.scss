@@ -1,0 +1,43 @@
+.wxpy-cells {
+  margin-top: 1.1em;
+  background-color: #FFFFFF;
+  line-height: 1.4;
+  font-size: 17px;
+  overflow: hidden;
+  position: relative;
+  .wxpy-cell {
+    padding: 10px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .wxpy-cell__bd {
+      flex: 1;
+    }
+  }
+}
+.wxpy-cell__title {
+  margin-top: .77em;
+  margin-bottom: .3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #808080;
+  font-size: 14px;
+}
+.wxpy-cell__ft {
+  text-align: right;
+  color: #808080;
+}
+.page__hd{
+  padding: 40px;
+  .page__title{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .page__dsc{
+    margin-top: 5px;
+    color: #888;
+    text-align: left;
+    font-size: 14px;
+  }
+}
