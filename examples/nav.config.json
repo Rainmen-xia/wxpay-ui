@@ -38,11 +38,6 @@
     "title": "CSS Components",
     "list": [
       {
-        "path": "/card",
-        "name": "Card",
-        "icon": "card"
-      },
-      {
         "path": "/article",
         "name": "Article",
         "icon": "article"
@@ -56,6 +51,11 @@
         "path": "/loadmore",
         "name": "Loadmore",
         "icon": "loadmore"
+      },
+      {
+        "path": "/search",
+        "name": "Search",
+        "icon": "search"
       }
     ]
   }

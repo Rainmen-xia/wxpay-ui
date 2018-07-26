@@ -7,9 +7,7 @@
                           :placeholder="placeholder"
                           v-if="type === 'textarea'"
                           :rows="rows"
-                          :disabled="disabled"
-                          :readonly="readonly"
-                          v-model="currentValue">
+                          :disabled="disabled">
     </textarea>
                 <input class="wxpy-input"
                        v-else

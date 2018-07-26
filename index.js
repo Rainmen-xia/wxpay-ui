@@ -1,6 +1,5 @@
 import headerEL from "./components/header.vue";
 import bodyEl from "./components/body.vue";
-import Card from './components/card.vue';
 import CardTitle from './components/cardtitle.vue';
 import CardPanel from './components/cardpanel.vue';
 //import Chart from './components/chart.vue';
@@ -16,11 +15,12 @@ import Slider from './components/slider.vue';
 import Uploader from './components/uploader.vue';
 import Article from './components/article.vue';
 import Footer from './components/footer.vue';
-import LoadMore from './components/loadmore.vue'
+import LoadMore from './components/loadmore.vue';
+import Search from './components/search.vue'
 
 require('./theme/reset.css');
 
-const components = [headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore]
+const components = [headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search]
 
 const install = function(Vue, opts = {}) {
     components.map(component=>{
@@ -37,6 +37,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     version:'1.0.0',
     install,
-    headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore
+    headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search
 }
 
