@@ -41,6 +41,21 @@
         "path": "/card",
         "name": "Card",
         "icon": "card"
+      },
+      {
+        "path": "/article",
+        "name": "Article",
+        "icon": "article"
+      },
+      {
+        "path": "/footer",
+        "name": "Footer",
+        "icon": "footer"
+      },
+      {
+        "path": "/loadmore",
+        "name": "Loadmore",
+        "icon": "loadmore"
       }
     ]
   }

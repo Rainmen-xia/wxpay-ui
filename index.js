@@ -14,10 +14,13 @@ import Input from './components/input.vue';
 import List from './components/list.vue';
 import Slider from './components/slider.vue';
 import Uploader from './components/uploader.vue';
+import Article from './components/article.vue';
+import Footer from './components/footer.vue';
+import LoadMore from './components/loadmore.vue'
 
 require('./theme/reset.css');
 
-const components = [headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader]
+const components = [headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore]
 
 const install = function(Vue, opts = {}) {
     components.map(component=>{
@@ -34,6 +37,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     version:'1.0.0',
     install,
-    headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader
+    headerEL,bodyEl,Card,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore
 }
 
