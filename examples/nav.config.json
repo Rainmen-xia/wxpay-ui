@@ -35,7 +35,7 @@
     ]
   },
   {
-    "title": "CSS Components",
+    "title": "Basic Components",
     "list": [
       {
         "path": "/article",
@@ -52,6 +52,16 @@
         "name": "Loadmore",
         "icon": "loadmore"
       },
+      {
+        "path": "/flex",
+        "name": "Flex",
+        "icon": "flex"
+      }
+    ]
+  },
+  {
+    "title": "Search",
+    "list": [
       {
         "path": "/search",
         "name": "Search",

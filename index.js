@@ -16,11 +16,13 @@ import Uploader from './components/uploader.vue';
 import Article from './components/article.vue';
 import Footer from './components/footer.vue';
 import LoadMore from './components/loadmore.vue';
-import Search from './components/search.vue'
+import Search from './components/search.vue';
+import Flexbox from './components/flex/flexbox.vue';
+import Flexitem from './components/flex/flexitem.vue';
 
 require('./theme/reset.css');
 
-const components = [headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search]
+const components = [headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem]
 
 const install = function(Vue, opts = {}) {
     components.map(component=>{
@@ -37,6 +39,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     version:'1.0.0',
     install,
-    headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search
+    headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem
 }
 
