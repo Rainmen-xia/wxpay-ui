@@ -41,3 +41,27 @@
     font-size: 14px;
   }
 }
+@mixin after{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #E5E5E5;
+  color: #E5E5E5;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+  left: 15px;
+}
+@mixin before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #E5E5E5;
+  color: #E5E5E5;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+  left: 15px;
+}

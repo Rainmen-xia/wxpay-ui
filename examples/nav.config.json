@@ -56,6 +56,11 @@
         "path": "/flex",
         "name": "Flex",
         "icon": "flex"
+      },
+      {
+        "path": "/panel",
+        "name": "Panel",
+        "icon": "panel"
       }
     ]
   },
