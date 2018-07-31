@@ -9,16 +9,16 @@
                 v-if="item.src">
                     <img class="wxpy-media-box__thumb" :src="item.src" alt=""></div>
                 <div class="wxpy-media-box__bd">
-                    <h4 class="wxpy-media-box__title" v-text="item.title"></h4>
-                    <p class="wxpy-media-box__desc" v-text="item.desc"></p>
+                    <h4 class="wxpy-media-box__title">{{item.title}}</h4>
+                    <p class="wxpy-media-box__desc">{{item.desc}}</p>
                 </div>
             </a>
             </template>
             <template v-if="type==='2'">
                 <div class="wxpy-media-box wxpy-media-box_text" v-for="item in list" >
                     <div class="wxpy-media-box__bd">
-                    <h4 class="wxpy-media-box__title" v-text="item.title"></h4>
-                    <p class="wxpy-media-box__desc" v-text="item.desc"></p>
+                    <h4 class="wxpy-media-box__title">{{item.title}}</h4>
+                    <p class="wxpy-media-box__desc">{{item.desc}}</p>
                     </div>
                 </div>
             </template>

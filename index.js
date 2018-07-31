@@ -20,10 +20,11 @@ import Search from './components/search.vue';
 import Flexbox from './components/flex/flexbox.vue';
 import Flexitem from './components/flex/flexitem.vue';
 import Panel from './components/panel.vue'
+import Preview from './components/preview.vue'
 
 require('./theme/reset.css');
 
-const components = [Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem]
+const components = [Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem]
 
 const install = function(Vue, opts = {}) {
     components.map(component=>{
@@ -40,6 +41,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     version:'1.0.0',
     install,
-    Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem
+    Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem
 }
 

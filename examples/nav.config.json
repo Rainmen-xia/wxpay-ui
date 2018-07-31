@@ -61,6 +61,11 @@
         "path": "/panel",
         "name": "Panel",
         "icon": "panel"
+      },
+      {
+        "path": "/preview",
+        "name": "Preview",
+        "icon": "preview"
       }
     ]
   },
