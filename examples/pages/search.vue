@@ -1,6 +1,6 @@
 <template>
     <div>
-        <search></search>
+        <wxpy-search></wxpy-search>
     </div>
 </template>
 

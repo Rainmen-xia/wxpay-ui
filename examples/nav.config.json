@@ -70,7 +70,22 @@
     ]
   },
   {
-    "title": "Search",
+    "title": "Navigation correlation",
+    "list": [
+      {
+        "path": "/tabbar",
+        "name": "Tabbar",
+        "icon": "tabbar"
+      },
+      {
+        "path": "/navbar",
+        "name": "Navbar",
+        "icon": "navbar"
+      }
+    ]
+  },
+  {
+    "title": "Search correlation",
     "list": [
       {
         "path": "/search",

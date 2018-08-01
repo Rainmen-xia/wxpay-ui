@@ -1,10 +1,10 @@
 <template>
-    $END$
+    
 </template>
 
 <script>
     export default {
-        name: "navbar"
+        name: "WxpyNavbar"
     }
 </script>
 

@@ -3,7 +3,7 @@ import bodyEl from "./components/body.vue";
 import CardTitle from './components/cardtitle.vue';
 import CardPanel from './components/cardpanel.vue';
 //import Chart from './components/chart.vue';
-import Tabs from './components/tabs.vue';
+import Tabs from './components/tabbar/tabbar.vue';
 import Pielegend from './components/pielegend.vue';
 import Paginator from './components/paginator.vue';
 import iTable from "./components/itable.vue";
@@ -21,10 +21,13 @@ import Flexbox from './components/flex/flexbox.vue';
 import Flexitem from './components/flex/flexitem.vue';
 import Panel from './components/panel.vue'
 import Preview from './components/preview.vue'
+import Tabbar from './components/tabbar/tabbar.vue'
+import TabbarItem from './components/tabbar/tabbar-item.vue'
+import Navbar from './components/navbar.vue'
 
 require('./theme/reset.css');
 
-const components = [Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem]
+const components = [TabbarItem,Navbar,Tabbar,Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem]
 
 const install = function(Vue, opts = {}) {
     components.map(component=>{
@@ -41,6 +44,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     version:'1.0.0',
     install,
-    Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem
+    TabbarItem,Navbar,Tabbar,Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem
 }
 

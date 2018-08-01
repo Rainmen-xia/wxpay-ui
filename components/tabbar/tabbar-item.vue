@@ -1,12 +1,10 @@
 <template>
-    <div>
-        <wxpy-tabbar></wxpy-tabbar>
-    </div>
+    <div></div>
 </template>
 
 <script>
     export default {
-        name: "tabbar"
+        name: "tabbar-item"
     }
 </script>
 

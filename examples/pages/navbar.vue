@@ -1,5 +1,7 @@
 <template>
-    $END$
+    <div>
+        <wxpy-navbar></wxpy-navbar>
+    </div>
 </template>
 
 <script>
