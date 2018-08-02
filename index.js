@@ -23,11 +23,12 @@ import Panel from './components/panel.vue'
 import Preview from './components/preview.vue'
 import Tabbar from './components/tabbar/tabbar.vue'
 import TabbarItem from './components/tabbar/tabbar-item.vue'
+import Reminder from './components/tabbar/reminder.vue'
 import Navbar from './components/navbar.vue'
 
 require('./theme/reset.css');
 
-const components = [TabbarItem,Navbar,Tabbar,Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem]
+const components = [Reminder,TabbarItem,Navbar,Tabbar,Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem]
 
 const install = function(Vue, opts = {}) {
     components.map(component=>{
@@ -44,6 +45,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     version:'1.0.0',
     install,
-    TabbarItem,Navbar,Tabbar,Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem
+    Reminder,TabbarItem,Navbar,Tabbar,Preview,Panel,headerEL,bodyEl,CardTitle,CardPanel,Tabs,Pielegend,Paginator,iTable,WxButton,Input,List,Slider,Uploader,Article,Footer,LoadMore,Search,Flexbox,Flexitem
 }
 
