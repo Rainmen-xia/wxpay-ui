@@ -1,6 +1,6 @@
 <template>
     <a href="javascript:;" class="wxpy-tabbar__item" :class="{'wxpy-bar__item-on': isActive}">
-        <div class="wxpy-tabbar__icon">
+        <div class="wxpy-tabbar__icon" :class="{'wxpy-reddot':showDot}">
             <slot name="icon"></slot>
             <slot name="icon-active"></slot>
             <sup v-if="reminder"><reminder :text="reminder"></reminder></sup>
@@ -69,5 +69,17 @@
     }
     .wxpy-bar__item-on .wxpy-tabbar__label{
         color: #09BB07;
+    }
+    .wxpy-reddot:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 5px;
+        background-clip: padding-box;
+        background-color: #f74c31;
+        right: -3px;
+        top: -3px;
     }
 </style>
