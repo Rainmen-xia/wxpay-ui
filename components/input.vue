@@ -8,7 +8,7 @@
                           v-if="type === 'textarea'"
                           :rows="rows"
                           :disabled="disabled">
-    </textarea>
+                </textarea>
                 <input class="wxpy-input"
                        v-else
                        type="type"

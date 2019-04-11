@@ -586,31 +586,6 @@ a {
   line-height: inherit;
   outline: 0;
 }
-.wxpy-article {
-  padding: 20px 15px;
-  font-size: 15px;
-}
-.wxpy-article h1 {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: .9em;
-}
-.wxpy-article section {
-    margin-bottom: 1.5em;
-}
-.wxpy-article section h2 {
-      font-size: 16px;
-      font-weight: 400;
-      margin-bottom: .34em;
-}
-.wxpy-article section h3 {
-      font-weight: 400;
-      font-size: 15px;
-      margin-bottom: .34em;
-}
-.wxpy-article section p {
-      margin: 0 0 .8em;
-}
 .wxpy-cells {
   margin-top: 1.1em;
   background-color: #FFFFFF;
@@ -653,6 +628,31 @@ a {
     color: #888;
     text-align: left;
     font-size: 14px;
+}
+.wxpy-article {
+  padding: 20px 15px;
+  font-size: 15px;
+}
+.wxpy-article h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: .9em;
+}
+.wxpy-article section {
+    margin-bottom: 1.5em;
+}
+.wxpy-article section h2 {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: .34em;
+}
+.wxpy-article section h3 {
+      font-weight: 400;
+      font-size: 15px;
+      margin-bottom: .34em;
+}
+.wxpy-article section p {
+      margin: 0 0 .8em;
 }
 .wxpy-footer {
   color: #808080;
@@ -720,14 +720,6 @@ a {
 }
 .wxpy-btn + .wxpy-btn[data-v-0fb365c5] {
   margin-top: 15px;
-}
-.flex-demo {
-  padding: 0 10px;
-  background-color: #ebebeb;
-  height: 2.3em;
-  line-height: 2.3em;
-  text-align: center;
-  color: #cfcfcf;
 }
 .wxpy-cells {
   margin-top: 1.1em;
@@ -1003,6 +995,14 @@ a {
 .wxpy-form-preview__btn_primary {
   color: #09BB07;
 }
+.flex-demo {
+  padding: 0 10px;
+  background-color: #ebebeb;
+  height: 2.3em;
+  line-height: 2.3em;
+  text-align: center;
+  color: #cfcfcf;
+}
 .wxpy-tabbar {
   display: flex;
   position: absolute;
@@ -1010,6 +1010,44 @@ a {
   bottom: 0;
   width: 100%;
   background-color: #F7F7FA;
+}
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.44);
+  z-index: 99999;
+}
+.wxp-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 548px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 100000;
+}
+.wxp-dialog__bd {
+  padding: 54px 42px 42px;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #999;
+}
+.dialog-bd__note {
+  font-size: 28px;
+  color: #000;
+}
+.wxp-dialog__btn {
+  font-size: 32px;
+  color: #c49b44;
+  text-align: right;
+  margin-top: 54px;
 }
 .wxpy-cells {
   margin-top: 1.1em;
@@ -1053,44 +1091,6 @@ a {
     color: #888;
     text-align: left;
     font-size: 14px;
-}
-.mask {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.44);
-  z-index: 99999;
-}
-.wxp-dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 80%;
-  max-width: 548px;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border-radius: 6px;
-  overflow: hidden;
-  z-index: 100000;
-}
-.wxp-dialog__bd {
-  padding: 54px 42px 42px;
-  word-wrap: break-word;
-  word-break: break-all;
-  color: #999;
-}
-.dialog-bd__note {
-  font-size: 28px;
-  color: #000;
-}
-.wxp-dialog__btn {
-  font-size: 32px;
-  color: #c49b44;
-  text-align: right;
-  margin-top: 54px;
 }
 .wxpy-cells {
   margin-top: 1.1em;
